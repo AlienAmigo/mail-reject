@@ -1,9 +1,31 @@
 .page {
   font-family: $font-family;
 
-  &__inner {}
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-  &__content {}
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #e8e8ed;
 
-  &__footer-wrapper {}
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      width: 100%;
+      height: 80px;
+      background-color: $main-color;
+    }
+  }
 }
