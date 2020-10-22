@@ -1,5 +1,5 @@
 {
-  "name": "EpicSkills-start-kit",
+  "name": "Start-kit",
   "version": "2.0.0",
   "description": "Start project.",
   "scripts": {
@@ -9,11 +9,11 @@
     "start": "gulp",
     "lint-staged": "lint-staged"
   },
-  "author": "Nikolay Gromov",
+  "author": "Peter Ryzhov",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/epixx/start-kit"
+    "url": "https://github.com/AlienAmigo/mail-reject.git"
   },
   "lint-staged": {
     "*.{js,pug,md}": "editorconfig-cli",
@@ -28,6 +28,7 @@
     "bemlint": "^1.6.1",
     "browser-sync": "^2.14.0",
     "del": "^5.1.0",
+    "gh-pages": "^3.1.0",
     "glob-exec": "^0.1.1",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
@@ -49,6 +50,7 @@
     "stylelint-selector-bem-pattern": "^2.0.0"
   },
   "dependencies": {
+    "path": "^0.12.7",
     "svg4everybody": "^2.1.9"
   },
   "browserslist": [
